@@ -1,0 +1,25 @@
+Question:
+Ask the user to enter 10 numbers.
+Calculate:
+•Sum
+•Average
+•Largest number
+•Smallest number
+•Number of even numbers
+•Number of odd numbers
+
+
+Code:
+total = 0
+even = 0
+odd = 0
+for i in range(1, 11):
+num = int(input("Enter number " + str(i) + ": ")) 
+total += num
+if num % 2 == 0:
+even += 1
+else:
+odd += 1
+average = total / 10
+print("Sum:", total)
+print("Average:", average)
